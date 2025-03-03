@@ -1,18 +1,20 @@
 {
   "files": {
     "main.css": "/social-foundation/static/css/main.cf8cb218.css",
-    "main.js": "/social-foundation/static/js/main.948b8cc3.js",
+    "main.js": "/social-foundation/static/js/main.99afe5e2.js",
     "static/js/453.7ca751b5.chunk.js": "/social-foundation/static/js/453.7ca751b5.chunk.js",
+    "static/media/ogrn.jpg": "/social-foundation/static/media/ogrn.8aa2dbc8a0615ca09ec1.jpg",
     "static/media/foundationChapter.pdf": "/social-foundation/static/media/foundationChapter.efb766e3127582ee09b4.pdf",
+    "static/media/minUst.pdf": "/social-foundation/static/media/minUst.4e741a354f1d0a5ec77e.pdf",
     "static/media/carousel_2.jpg": "/social-foundation/static/media/carousel_2.dc6ed80179ca734e06cd.jpg",
     "static/media/logo.svg": "/social-foundation/static/media/logo.c0e4f4c5652088a5348b199888005bd2.svg",
     "index.html": "/social-foundation/index.html",
     "main.cf8cb218.css.map": "/social-foundation/static/css/main.cf8cb218.css.map",
-    "main.948b8cc3.js.map": "/social-foundation/static/js/main.948b8cc3.js.map",
+    "main.99afe5e2.js.map": "/social-foundation/static/js/main.99afe5e2.js.map",
     "453.7ca751b5.chunk.js.map": "/social-foundation/static/js/453.7ca751b5.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.cf8cb218.css",
-    "static/js/main.948b8cc3.js"
+    "static/js/main.99afe5e2.js"
   ]
 }
