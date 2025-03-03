@@ -19,7 +19,7 @@ const NewsList: React.FC = () => {
         <Row className="g-4">
           {news.map((item) => (
             <Col key={item.id}>
-              <Card onClick={() => handleNewsClick(item.id)} style={{ cursor: 'pointer' }}>
+              <Card border="primary" onClick={() => handleNewsClick(item.id)} style={{ cursor: 'pointer' }}>
                 <Card.Body>
                   <Card.Title>{item.title}</Card.Title>
                   <Card.Text>
