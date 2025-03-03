@@ -39,7 +39,7 @@ const DocumentInfo: React.FC = () => {
             rel="noopener noreferrer"
             className="text-decoration-none w-100"
           >
-            <Button variant="outline-primary" className="w-100 d-flex align-items-center justify-content-center">
+            <Button variant="outline-primary" className="w-100 h-100 d-flex align-items-center justify-content-center">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="20"
