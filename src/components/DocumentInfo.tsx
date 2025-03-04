@@ -7,6 +7,7 @@ import Row from 'react-bootstrap/Row';
 import foundationChapter from '../docs/foundationChapter.pdf';
 import ogrn from '../docs/ogrn.jpg';
 import minUst from '../docs/minUst.pdf';
+import realisation from '../docs/realisation.pdf';
 
 const documentInfo = [
   {
@@ -24,14 +25,19 @@ const documentInfo = [
     title: 'Уведомление Минюста РФ о признании Фонда «Серебряное поколение» СОНКО исполнителем общественно полезных услуг',
     file: minUst,
   },
+  {
+    id: 4,
+    title: 'Справка об итогах реализации проектов',
+    file: realisation,
+  },
 ];
 
 const DocumentInfo: React.FC = () => {
   return (
-    <Row className="justify-content-center">
+    <Row>
       <Card.Title className="my-4 text-center">Документы фонда</Card.Title>
       {documentInfo.map((item) => (
-        <Col key={item.id} md={6} lg={4} className="mb-4">
+        <Col key={item.id} lg={3} className="mb-4">
           <a
             href={item.file}
             download={item.title}

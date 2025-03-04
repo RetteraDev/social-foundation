@@ -1,5 +1,5 @@
 import React from 'react';
-import { Card, Button } from 'react-bootstrap';
+import { Card, Button, Row } from 'react-bootstrap';
 
 interface NewsDetailProps {
   news: {
@@ -9,6 +9,7 @@ interface NewsDetailProps {
     endDate: string; // Дата окончания проекта
     supportAmount: string; // Сумма поддержки
     results: string; // Основные результаты проекта
+    urls: Array<string>
   };
   onBack: () => void;
 }
@@ -40,6 +41,20 @@ const NewsDetail: React.FC<NewsDetailProps> = ({ news, onBack }) => {
           <strong>Основные результаты проекта:</strong><br />
           {news.results}
         </Card.Text>
+        <Card.Text style={{textAlign:'justify'}}>
+          Ссылки на публикации о семинарах:
+        </Card.Text>
+        <Row>
+          {news.urls.map((url) => (
+            <a
+              href={url}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              {url}
+            </a>
+          ))}
+        </Row>
       </Card.Body>
     </Card>
   );

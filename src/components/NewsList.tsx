@@ -14,7 +14,7 @@ const NewsList: React.FC = () => {
 
   return (
     <div>
-      <Card.Title className="my-4 text-center">Наши проекты</Card.Title>
+      <Card.Title className="my-4 text-center">Наши проекты, поддержанные Фондом президентских грантов</Card.Title>
       {selectedNews === null ? (
         <Row className="g-4">
           {news.map((item) => (
