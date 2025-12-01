@@ -111,15 +111,11 @@ export const DocumentList = () => {
         </CardContent>
       </Card>
 
-      <Card>
-        <CardContent className="p-4 sm:p-6">
-          <p className="text-xs sm:text-sm text-muted-foreground text-center leading-relaxed">
-            Все представленные документы являются официальными и действующими. 
-            Фонд «Серебряное поколение» осуществляет свою деятельность в соответствии 
-            с законодательством Российской Федерации.
-          </p>
-        </CardContent>
-      </Card>
+      <p className="text-xs sm:text-sm text-muted-foreground text-center leading-relaxed">
+        Все представленные документы являются официальными и действующими. 
+        Фонд «Серебряное поколение» осуществляет свою деятельность в соответствии 
+        с законодательством Российской Федерации.
+      </p>
     </div>
   );
 };
