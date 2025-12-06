@@ -1,3 +1,11 @@
+export interface DocumentItem {
+  id: number;
+  title: string;
+  file: string;
+  type: 'pdf' | 'image' | 'docx';
+  description?: string;
+}
+
 export interface ProjectsItem {
   id: string;
   title: string;
@@ -6,9 +14,49 @@ export interface ProjectsItem {
   supportAmount: string;
   results: string;
   urls: string[];
+  documents?: DocumentItem[];
 }
 
 export const projectsData: ProjectsItem[] = [
+  {
+    id: "malye-goroda-2025",
+    title: 'Проект «Малые города и старшее поколение. Предупрежден – значит вооружен. Профилактика социально значимых заболеваний»',
+    startDate: '01.07.2025',
+    endDate: '31.12.2026',
+    supportAmount: '-',
+    results: ``,
+    urls: [],
+    documents: [
+      {
+        id: 1,
+        title: 'Поздравление с победой в конкурсе и описание проекта',
+        file: '/docs/malye-goroda-2025/Поздравление_с_победой_в_конкурсе_Фонда_президентских_грантов_17_июня_2025.pdf',
+        type: 'pdf',
+        description: '(2 страницы, вложение №1)'
+      },
+      {
+        id: 2,
+        title: 'Пресс-релиз и фото о семинаре в Заволжске',
+        file: '/docs/malye-goroda-2025/Пост_релиз_Заволжск_6_августа_2025_обучающий_семинар.pdf',
+        type: 'pdf',
+        description: '(2 страницы)'
+      },
+      {
+        id: 3,
+        title: 'Пресс-релиз и фото о семинаре в Кинешме',
+        file: '/docs/malye-goroda-2025/Пост_релиз_Кинешма_10_сентября_2025_обучающий_семинар.pdf',
+        type: 'pdf',
+        description: '(2 страницы)'
+      },
+      {
+        id: 4,
+        title: 'Пресс-релиз и фото о семинаре в Савино',
+        file: '/docs/malye-goroda-2025/Пост_релиз_Савино_15_октября_2025_обучающий_семинар.pdf',
+        type: 'pdf',
+        description: '(2 страницы)'
+      }
+    ]
+  },
   {
     id: "monogoroda-2023",
     title: 'Проект «Моногорода. Здоровье и безопасность старшего поколения»',
@@ -52,5 +100,35 @@ export const projectsData: ProjectsItem[] = [
       "https://vichugskie.ru/17798",
       "http://veterani37.ru/novosti/6537/",
     ]
+  }
+];
+
+export const foundationDocuments: DocumentItem[] = [
+  {
+    id: 1,
+    title: 'Устав фонда',
+    file: '/docs/foundationChapter.pdf',
+    type: 'pdf',
+    description: 'Основной документ, определяющий цели, задачи и порядок деятельности фонда',
+  },
+  {
+    id: 2,
+    title: 'Свидетельство ОГРН',
+    file: '/docs/ogrn.jpg',
+    type: 'image',
+    description: 'Свидетельство о государственной регистрации некоммерческой организации'
+  },
+  {
+    id: 3,
+    title: 'Уведомление Минюста РФ о признании Фонда «Серебряное поколение» СОНКО исполнителем общественно полезных услуг',
+    file: '/docs/minUst.pdf',
+    type: 'pdf',
+  },
+  {
+    id: 4,
+    title: 'Справка об итогах реализации проектов',
+    file: '/docs/realisation.pdf',
+    type: 'pdf',
+    description: 'Отчет о реализации проектов, поддержанных Фондом президентских грантов',
   }
 ];
