@@ -1,38 +1,35 @@
 import { Card, CardContent } from '@/components/ui/card';
+import { PhotoCarousel } from '@/components/ui/photo-carousel';
+
+const homeCarouselImages = [
+  '/images/carousel_1.jpg',
+  '/images/carousel_2.jpg',
+];
 
 export const Banner = () => {
   return (
     <Card>
       <CardContent className="p-4 sm:p-6">
         <div className="space-y-4 sm:space-y-6">
-          <div className="mb-10 text-center">
+          <div className="text-center">
             <h1 className="text-xl sm:text-3xl font-bold leading-tight">
               Добро пожаловать на сайт Фонда «Серебряное поколение»
             </h1>
           </div>
-
           <div className="space-y-3 sm:space-y-4 text-justify">
             <p className="text-sm sm:text-base leading-relaxed">
               Членами высшего коллегиального органа управления – Совета Фонда - являются представители региональных ветеранских организаций (Ивановской региональной организации Всероссийской общественной организации ветеранов (пенсионеров) войны, труда, Вооруженных Сил и правоохранительных органов, Общероссийской общественной организации «Союз пенсионеров России» по Ивановской области, Ассоциации ветеранов боевых действий органов внутренних дел и внутренних войск России, Ивановского областного отделения общероссийской общественной организации ветеранов органов внутренних дел и внутренних войск России).
             </p>
-            
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 sm:gap-4">
-              <div>
-                <img
-                  src="images/carousel_1.jpg"
-                  alt="Мероприятие фонда"
-                  className="w-full h-40 sm:h-48 object-cover rounded-lg"
-                />
-              </div>
-              <div>
-                <img
-                  src="images/carousel_2.jpg"
-                  alt="Мероприятие фонда"
-                  className="w-full h-40 sm:h-48 object-cover rounded-lg"
-                />
-              </div>
-            </div>
+          </div>
+          {/* Карусель на главной */}
+          <div className="py-4">
+            <PhotoCarousel
+              images={homeCarouselImages}
+              altPrefix="Мероприятие фонда"
+            />
+          </div>
 
+          <div className="space-y-3 sm:space-y-4 text-justify">            
             <p className="text-sm sm:text-base leading-relaxed">
               Совет Фонда возглавляет Лампасов Леонид Кириллович, председатель Ивановской региональной организации Всероссийской общественной организации ветеранов (пенсионеров) войны, труда, Вооруженных Сил и правоохранительных органов, учредитель Фонда. Попечительский Совет Фонда возглавляет депутат Ивановской городской думы Мишагин Олег Викторович.
             </p>
@@ -41,6 +38,7 @@ export const Banner = () => {
               В команды проектов, реализованных Фондом "Серебряное поколение" при поддержке Фонда президентских грантов и направленных на улучшение качества жизни людей старшего поколения и их активное долголетие, входят специалисты ОБУЗ "Кардиологический диспансер", ОБУЗ "Ивановский онкологический диспансер", ОГБПОУ "Ивановский медицинский колледж", ФГБОУ ВО "Ивановский государственный медицинский университет", Ивановского отделения Сбербанка России и других организаций.
             </p>
           </div>
+
         </div>
       </CardContent>
     </Card>

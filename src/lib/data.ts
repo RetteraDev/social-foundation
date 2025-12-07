@@ -14,6 +14,7 @@ export interface ProjectsItem {
   supportAmount: string;
   results: string;
   urls: string[];
+  images?: string[]; 
   documents?: DocumentItem[];
 }
 
@@ -25,6 +26,20 @@ export const projectsData: ProjectsItem[] = [
     endDate: '31.12.2026',
     supportAmount: '-',
     results: ``,
+    images: [
+      '/images/malye-goroda-2025/Бересток_приветствие.jpg',
+      '/images/malye-goroda-2025/Представление_команды_проекта.jpg',
+      '/images/malye-goroda-2025/Лекция_Бурыкина.jpg',
+      '/images/malye-goroda-2025/Лекция_Бурлакова.jpg',
+      '/images/malye-goroda-2025/Лекция_Березина.jpg',
+      '/images/malye-goroda-2025/Врачи_Центра_здоровья.jpg',
+      '/images/malye-goroda-2025/Медсестры_Центра_здоровья_готовят_рабочее_место.jpg',
+      '/images/malye-goroda-2025/Бурыкина_консультация_4.jpg',
+      '/images/malye-goroda-2025/Бурыкина_консультация.jpg',
+      '/images/malye-goroda-2025/Березина_консультация.jpg',
+      '/images/malye-goroda-2025/Бурлакова_консультация.jpg',
+      '/images/malye-goroda-2025/Раздаточный_материал.jpg',
+    ],
     urls: [],
     documents: [
       {
@@ -36,25 +51,32 @@ export const projectsData: ProjectsItem[] = [
       },
       {
         id: 2,
-        title: 'Пресс-релиз и фото о семинаре в Заволжске',
+        title: 'Пресс-релиз о семинаре в Заволжске',
         file: '/docs/malye-goroda-2025/Пост_релиз_Заволжск_6_августа_2025_обучающий_семинар.pdf',
         type: 'pdf',
         description: '(2 страницы)'
       },
       {
         id: 3,
-        title: 'Пресс-релиз и фото о семинаре в Кинешме',
+        title: 'Пресс-релиз о семинаре в Кинешме',
         file: '/docs/malye-goroda-2025/Пост_релиз_Кинешма_10_сентября_2025_обучающий_семинар.pdf',
         type: 'pdf',
         description: '(2 страницы)'
       },
       {
         id: 4,
-        title: 'Пресс-релиз и фото о семинаре в Савино',
+        title: 'Пресс-релиз о семинаре в Савино',
         file: '/docs/malye-goroda-2025/Пост_релиз_Савино_15_октября_2025_обучающий_семинар.pdf',
         type: 'pdf',
         description: '(2 страницы)'
-      }
+      },
+      {
+        id: 4,
+        title: 'Пресс-релиз о семинаре в Наволоках',
+        file: '/docs/malye-goroda-2025/Пост_релиз_Наволоки_27_ноября_2025_обучающий_семинар.pdf',
+        type: 'pdf',
+        description: '(2 страницы)'
+      },
     ]
   },
   {

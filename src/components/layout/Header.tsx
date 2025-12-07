@@ -12,7 +12,7 @@ export const Header = () => {
         <div className="flex h-16 items-center justify-between">
           <div className="flex items-center gap-2">
             <img
-              src="icons/logo.svg"
+              src="/icons/logo.svg"
               alt="Логотип"
               className="h-8 w-8"
             />

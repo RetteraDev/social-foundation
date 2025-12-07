@@ -1,10 +1,10 @@
-// src/components/projects/ProjectsDetail.tsx
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 import { Link } from '@tanstack/react-router';
 import { ArrowLeft } from 'lucide-react';
 import { type ProjectsItem } from '@/lib/data';
 import { DocumentSection } from '@/components/documents/DocumentSection';
+import { PhotoCarousel } from '@/components/ui/photo-carousel';
 
 interface ProjectsDetailProps {
   projects: ProjectsItem;
@@ -41,6 +41,17 @@ export const ProjectsDetail = ({ projects }: ProjectsDetailProps) => {
               <span className="text-sm sm:text-base">{projects.supportAmount}</span>
             </div>
           </div>
+
+          {/* Изображения проекта (карусель) */}
+          {projects.images && projects.images.length > 0 && (
+            <div>
+              <h3 className="font-semibold text-lg sm:text-xl mb-3">Галерея проекта:</h3>
+              <PhotoCarousel
+                images={projects.images}
+                altPrefix="Изображение проекта"
+              />
+            </div>
+          )}
 
           {/* Результаты */}
           {projects.results && projects.results.length > 0 && (
