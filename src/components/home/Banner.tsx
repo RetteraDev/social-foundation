@@ -2,8 +2,8 @@ import { Card, CardContent } from '@/components/ui/card';
 import { PhotoCarousel } from '@/components/ui/photo-carousel';
 
 const homeCarouselImages = [
-  '/images/carousel_1.jpg',
-  '/images/carousel_2.jpg',
+  '/images/carousel_1.webp',
+  '/images/carousel_2.webp',
 ];
 
 export const Banner = () => {

@@ -37,7 +37,7 @@ export const DirectorInfo = () => {
           <div className="flex-shrink-0">
             <div className="w-32 h-32 sm:w-48 sm:h-48 rounded-lg overflow-hidden border-4 border-gray-100">
               <img
-                src="images/director.jpg"
+                src="/images/director.webp"
                 alt="Директор фонда Леонид Кириллович Лампасов"
                 className="w-full h-full object-cover"
               />
